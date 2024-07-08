@@ -1,0 +1,162 @@
+:root {
+  --header-color: #2F4F4F;
+  --background-color: rgb(182, 196, 196);
+  --blog-color: #f2e5d9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color); /* Light grey background for a clean look */
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #007b5e; /* Eco-friendly green */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: var(--header-color); /* Eco-friendly green */
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+}
+
+header .header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px; /* Add space to the left of the text */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em; /* Increased font size */
+}
+
+header .tagline {
+  font-size: 1em; /* Increased font size for the tagline */
+  font-style: italic;
+  color: #f0e68c; /* Light yellow */
+  margin-top: -15px;
+}
+
+header img {
+  height: 100px; /* Increase logo size */
+  margin-left: 20px; /* Add space to the left of the logo */
+}
+
+nav {
+  margin-right: auto; /* Pushes the navigation to the left */
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 1.2em; /* Increased font size for the navigation links */
+}
+
+nav ul li a:hover {
+  color: #f0e68c; /* Light yellow */
+}
+
+main {
+  padding: 20px;
+}
+
+.mission {
+  font-size: 40px;
+}
+
+footer {
+  background-color: var(--header-color); /* Eco-friendly green */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+h2 {
+  color: #007b5e; /* Eco-friendly green */
+}
+
+p {
+  color: #333; /* Dark grey for readability */
+}
+
+
+.intro-header {
+  text-align: center;
+}  
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px; /* Limits the width for better readability */
+  width: 100%;
+  margin: 20px auto; /* Centers the content */
+  padding: 20px; /* Adds some space around the content */
+  font-family: 'Arial', sans-serif; /* Sets a readable font */
+  line-height: 1.6; /* Increases line height for better readability */
+  color: #333; /* Dark gray color for text */
+  background-color: var(--blog-color); /* Light background color for contrast */
+  border-radius: 8px; /* Rounds the corners of the container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.intro p {
+  width: 100%;
+  margin-bottom: 1.5em; /* Adds space between paragraphs */
+}
+
+.intro p:first-of-type {
+  font-weight: bold; /* Makes the first paragraph bold */
+  font-size: 1.2em; /* Increases the font size of the first paragraph */
+}
+
+.intro p:nth-of-type(2) {
+  font-style: italic; /* Makes the second paragraph italic */
+  color: #666; /* Lighter gray for secondary text */
+}
+
+@media (max-width: 600px) {
+  .intro {
+      padding: 15px; /* Adjusts padding for smaller screens */
+      margin: 10px;
+  }
+
+  .intro p {
+      font-size: 1em; /* Adjusts font size for smaller screens */
+  }
+}
