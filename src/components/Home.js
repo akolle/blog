@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
-      <h2 className='intro-header'>ci Welcome to Emily and Andy's site!</h2>
+      <h2 className='intro-header'>ci1 Welcome to Emily and Andy's site!</h2>
       <div className='intro'>
         <p>Around Our Home…</p>
         <p>*TL;DR only good vibes and real reviews.</p>
