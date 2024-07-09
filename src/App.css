@@ -160,3 +160,11 @@ p {
       font-size: 1em; /* Adjusts font size for smaller screens */
   }
 }
+
+@media (max-width: 600px) {
+ 
+  header {
+    padding: 5px;
+    margin: 5px;
+  }
+}
